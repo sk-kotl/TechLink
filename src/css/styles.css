@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap'); */
 
+a {
+    text-decoration: none;
+}
+
 html, body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -81,6 +85,73 @@ header a {
 }
 /* Основная часть header */
 /* Настройка header */
+
+
+/* main */
+/* categories */
+
+main {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.main-categories {
+    display: grid;
+    grid-template-columns: 930px 658px;
+    grid-template-rows: 480px 370px;
+    gap: 20px;
+}
+
+.main-categories-item,
+.main-categories-sitem {
+    display: inline-block;
+    position: relative;
+}
+
+.main-categories-sitem {
+    background-color: #EFE9D9;
+    border-radius: 50px;
+}
+
+.main-categories-item img {
+    display: block;
+}
+
+.main-categories-item h2,
+.main-categories-sitem h2 {
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    color: #333333;
+    font-size: 48px
+}
+
+.main-categories-item .button-text {
+    position: absolute;
+    bottom: 60px;
+    right: 120px;
+    background-color: #9652C7;
+    padding: 10px;
+    color: white;
+    border-radius: 50px;
+    width: 387px;
+    height: 59px;
+    text-align-last: center;
+    align-content: center;
+    font-size: 32px;
+}
+
+
+
+.button-icon {
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+}
+
+
+/* categories */
+/* main */
 
 
 /* Настройка footer */
