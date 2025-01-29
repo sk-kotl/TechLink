@@ -1,0 +1,90 @@
+/* Подключение шрифта */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap'); */
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+/* Подключение шрифта */
+
+
+/* Настройка header */
+header {
+    background-color: #EFE9D9;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Верхняя часть header-а */
+.header-upper {
+    display: flex;
+    padding: 11px 11px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #EFE9D9;
+}
+
+.header-grid-left ul,
+.header-grid-right ul {
+    list-style: none;
+    display: flex;
+    padding-right: 60px;
+}
+
+.header-grid-left li {
+    margin-right: 50px;
+}
+/* Верхняя часть header-а */
+
+
+/* Основная часть header-а */
+.header {
+    background-color: #9652C7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+.logo-header {
+    margin-left:60px;
+}
+
+.header-menu-center ul,
+.header-menu-right ul {
+    display: flex; 
+    list-style: none;
+}
+
+.header-menu-right li {
+    margin-right: 20px;
+}
+
+.header-menu-center li {
+    margin-right: 50px; 
+}
+
+.header a {
+    color: white;
+}
+/* Основная часть header */
+/* Настройка header */
+
+
+/* Настройка footer */
+.logo-footer {
+    margin-left:50px;
+}
+/* Настройка footer */

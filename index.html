@@ -3,46 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/styles.css">
     <title>TechLink | Главная</title>
 </head>
 <body>
     <header>
-        <centeR>
-            <nav>
+        <div class="header-upper">
+            <nav class="header-grid-left">
                 <ul>
                     <li><a href="#">О компании</a></li>
                     <li><a href="#">Доставка и оплата</a></li>
                     <li><a href="#">Контакты</a></li>
                 </ul>
             </nav>
-        </centeR>
-        <nav>
-            <ul>
-                <li><a href="#">Проверить статус заказа</a></li>
-            </ul>
-         </nav>
-        <div class="header-menu">
-            <h1>TechLink</h1>
-            <center>
-                <nav> 
+            <div class="header-grid-right">
+                <nav>
                     <ul>
-                        <li><a href="#">Каталог</a></li>
-                        <li><a href="#">Распродажа</a></li>
-                        <li><a href="#">Кастомизация</a></li>
-                        <li><a href="#">Новинки</a></li>
+                        <li><b><a href="#">Проверить статус заказа</a></b></li>
                     </ul>
                 </nav>
-            </center>
-             <nav>
+            </div>
+        </div>
+        <div class="header">
+            <div class="logo-header">
+                <img src="src/icons/techlinkLogo.svg" height="34px" weight="189px" alt="TechLink">
+            </div>
+            <nav class="header-menu-center"> 
                 <ul>
-                    <li><a href="#"><i src="/src/icons/icon-search"></i></a></li>
-                    <li><a href="#"><i src="/src/icons/icon-bag"></i></a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Распродажа</a></li>
+                    <li><a href="#">Кастомизация</a></li>
+                    <li><a href="#">Новинки</a></li>
                 </ul>
-             </nav>
+            </nav>
+            <div class="header-menu-right">
+                <nav>
+                    <ul>
+                        <li><a href="#"><img src="/src/icons/icon-search.svg"></img></a></li>
+                        <li><a href="#"><img src="/src/icons/icon-bag.svg"></img></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
-        <section>
+        <section class="">
             <div>
                 <article>
                     <img src="src/img/keyboard.png" alt="" width="930" height="480">
@@ -138,46 +143,48 @@
         </section>
     </main>
     <footer>
+        <div class="logo-footer">
+            <img src="src/icons/techlinkLogo.svg" height="34px" weight="189px" style="background-color:black;" alt="TechLink">
+        </div>
         <nav>
             <ul>
-                <li><h1>TechLink</h1></li>
                 <li><a href="https://vk.com/techlink" target="_blank"><img src="/src/icons/vk.svg" width="40px" height="40px"></a></li>
                 <li><a href="https://youtube.com/techlink" target="_blank"><img src="/src/icons/yt.svg" width="40px" height="40px"></a></li>
                 <li><a href="https://t.me/techlink" target="_blank"><img src="/src/icons/tg.svg" width="40px" height="40px"></a></li>
             </ul>
         </nav>
-        <article>
+        <article class="footer-column">
             <h3>Покупателям</h3>
             <ul>
-                <li><a href="#">Политика конфиденциальности</a></li>
-                <li><a href="#">Пользовательское соглашение</a></li>
-                <li><a href="#">Договор оферты</a></li>
+                <li class="footer-column-menu"><a href="#">Политика конфиденциальности</a></li>
+                <li class="footer-column-menu"><a href="#">Пользовательское соглашение</a></li>
+                <li class="footer-column-menu"><a href="#">Договор оферты</a></li>
             </ul>
         </article>
-        <article>
+        <article class="footer-column">
             <h3>Покупателям</h3>
             <ul>
-                <li><a href="#">Доставка и оплата</a></li>
-                <li><a href="#">Поддержка</a></li>
-                <li><a href="#">Проверить статус заказа</a></li>
+                <li class="footer-column-menu"><a href="#">Доставка и оплата</a></li>
+                <li class="footer-column-menu"><a href="#">Поддержка</a></li>
+                <li class="footer-column-menu"><a href="#">Проверить статус заказа</a></li>
             </ul>
         </article>
-        <article>
+        <article class="footer-column">
             <h3>Главная</h3>
             <ul>
-                <li><a href="#">Хиты</a></li>
-                <li><a href="#">Преимущества</a></li>
-                <li><a href="#">Новинки</a></li>
+                <li class="footer-column-menu"><a href="#">Хиты</a></li>
+                <li class="footer-column-menu"><a href="#">Преимущества</a></li>
+                <li class="footer-column-menu"><a href="#">Новинки</a></li>
             </ul>
         </article>
-        <article>
+        <article class="footer-column">
             <h3>Контакты</h3>
             <ul>
-                <li><a href="tel:+79990000000">+7(999)000-00-00</a></li>
-                <li><a href="mailto:techlink@6ek.ru">techlink@6ek.ru</a></li>
+                <li class="footer-column-menu"><a href="tel:+79990000000">+7(999)000-00-00</a></li>
+                <li class="footer-column-menu"><a href="mailto:techlink@6ek.ru">techlink@6ek.ru</a></li>
             </ul>
         </article>
-        <center><p>ООО «ТечЛинк», ОГРН: 1234567890, Юр. адрес: 123456, Здешняя обл, г Тут, д 3 © 2025 TECHLINK</p></center>
+        <p>ООО «ТечЛинк», ОГРН: 1234567890, Юр. адрес: 123456, Здешняя обл, г Тут, д 3 © 2025 TECHLINK</p>
     </footer>
 </body>
 </html>
