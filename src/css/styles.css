@@ -1,23 +1,41 @@
-/* Подключение шрифта */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap'); */
+/* font connection */
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 
-a {
-    text-decoration: none;
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
 }
 
 html, body {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+    font-weight: 400; 
 }
-/* Подключение шрифта */
+/* font connection */
 
+/* general settings */
+a {
+    text-decoration: none;
+}
 
-/* Настройка header */
+p {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+section {
+    margin-bottom: 200px;
+}
+
+section h2 {
+    margin-bottom: 50px;
+}
+/* general settings */
+
+/* header settings */
 header {
     background-color: #EFE9D9;
     margin-bottom: 50px;
@@ -30,9 +48,10 @@ header a {
 }
 
 
-/* Верхняя часть header-а */
+/* header-up part settings */
 .header-upper {
     display: flex;
+    margin-left: 60px;
     padding: 11px 11px;
     align-items: center;
     justify-content: space-between;
@@ -49,10 +68,10 @@ header a {
 .header-grid-left li {
     margin-right: 50px;
 }
-/* Верхняя часть header-а */
+/* header-up part settings */
 
 
-/* Основная часть header-а */
+/* header main part */
 .header {
     background-color: #9652C7;
     display: flex;
@@ -60,10 +79,13 @@ header a {
     align-items: center;
     padding-top: 11px;
     padding-bottom: 11px;
+    padding-left: 60px;
 }
 
 .logo-header {
-    margin-left:60px;
+    font-family: 'Jersey 10';
+    font-size: 64px;
+    color:white;
 }
 
 .header-menu-center ul,
@@ -83,8 +105,8 @@ header a {
 .header a {
     color: white;
 }
-/* Основная часть header */
-/* Настройка header */
+/* header main part */
+/* header settings */
 
 
 /* main */
@@ -100,12 +122,14 @@ main {
     grid-template-columns: 930px 658px;
     grid-template-rows: 480px 370px;
     gap: 20px;
+    /* display: flex; */
 }
 
 .main-categories-item,
 .main-categories-sitem {
     display: inline-block;
     position: relative;
+    margin-right: 20px; 
 }
 
 .main-categories-sitem {
@@ -123,7 +147,6 @@ main {
     top: 30px;
     right: 60px;
     color: #333333;
-    font-size: 48px
 }
 
 .main-categories-item .button-text {
@@ -141,21 +164,125 @@ main {
     font-size: 32px;
 }
 
-
-
 .button-icon {
     position: absolute;
     bottom: 60px;
     right: 60px;
 }
-
-
 /* categories */
+
+/* sales hits */
+.main-sales-hits {
+}
+
+.hits-item {
+    margin-right: 20px;
+    display: inline-block;
+    border-radius: 50px;
+    background-color: #EFE9D9;
+    width: 387px;
+    height: 400px;
+}
+
+.hits-item img,
+.hits-item p,
+.hits-item h3 {
+    margin-left: 30px;
+    margin-top: 0px;
+    color: #333333;
+}
+
+.hits-item h3 {
+    font-size: 32px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #9652C7;
+}
+
+.hits-item img {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.discount {
+    font-size: 16px;
+    text-decoration: line-through;
+}
+/* sales hits */
+
+
+/* main sales new */
+.main-sales-new h2 {
+   font-size: 48px; 
+}
+
+/* main sales new */
 /* main */
 
 
-/* Настройка footer */
-.logo-footer {
-    margin-left:50px;
+/* footer settings */
+footer {
+    background-color: #EFE9D9;
 }
-/* Настройка footer */
+
+footer a {
+    color: black;
+}
+
+.footer-first-part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-right: 50px;
+    margin-left:50px;
+    margin-bottom: 50px;
+}
+
+.footer-socials ul {
+    display: flex;
+    list-style: none;
+}
+
+.footer-socials li {
+    margin-right: 20px;
+}
+
+.logo-footer {
+    font-family: 'Jersey 10';
+    font-size: 64px;
+    color:black;
+}
+.footer-main-part {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 60px;
+    margin-bottom: 98px;
+}
+
+.footer-column {
+    flex: 1;
+    font-size: 24px;
+}
+
+.footer-column h3 {
+    color: #9652C7;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    text-align: center;
+}
+
+.footer-column ul li {
+    margin-bottom: 20px;
+}
+
+.footer-information {
+    text-align: center;
+    padding-bottom: 20px;
+}
+/* footer settings */
