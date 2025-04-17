@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <link rel="stylesheet" href="./src/css/checkStatus.css">
+  <link rel="stylesheet" href="./src/css/searchPanel.css">
+  <title>TechLink | 404</title>
+</head>
+<body>
+  <header>
+    <div class="firstly-header">
+      <nav>
+        <ul class="left-side-header">
+          <li>
+            <a href="./aboutcompany.html">О компании</a>
+          </li>
+          <li>
+            <a href="./delivery.html">Доставка и оплата</a>
+          </li>
+          <li>
+            <a href="./404.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="right-side-header">
+        <a href="#" id="check-status-span">Проверить статус заказа</a>
+      </div>
+    </div>
+    <div class="main-header">
+      <div class="header-logo">
+        <a href="./">
+          <img src="./src/icons/WhiteTechLinkLogo.svg" alt="Logo" width="189px" height="34px">
+        </a>
+      </div>
+      <nav>
+        <ul class="center-header">
+          <li><a href="./catalog.html">Каталог</a></li>
+          <li><a href="./sales.html">Распродажа</a></li>
+          <li><a href="./custom_items.html">Кастомизация</a></li>
+          <li><a href="./new_items.html">Новинки</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <ul class="right-side-main-header">
+          <li><a href="#" id="search-btn">
+              <img src="./src/icons/icon-search.svg" alt="Search" width="40" height="40">
+            </a>
+          </li>
+          <li><a href="./cart_items.html">
+              <img src="./src/icons/icon-bag.svg" alt="Cart" width="40" height="40">
+            </a>
+          </li>
+          <li class="burger-btn" id="burger-btn"><img src="./src/icons/burger.svg" alt="burger" width="40" height="40"></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <button class="close-btn" id="close-btn">&times;</button>
+      <ul>
+        <li><a href="./catalog.html">Каталог</a></li>
+        <li><a href="./sales.html">Распродажа</a></li>
+        <li><a href="./custom_items.html">Кастомизация</a></li>
+        <li><a href="./new_items.html">Новинки</a></li>
+        <li><hr></li>
+        <li><a href="./aboutcompany.html">О компании</a></li>
+        <li><a href="./delivery.html">Доставка и оплата</a></li>
+        <li><a href="./404.html">Контакты</a></li>
+        <li><a href="#" id="check-status-span-mobile">Проверить статус заказа</a></li>
+      </ul>
+    </div>
+  </header>
+  <script src="./src/js/burgerMenu.js"></script>
+
+  <div id="overlay"></div>
+  <div id="order-status-panel">
+    <div class="panel-content">
+      <div class="header-panel">
+        <h3>Проверить статус заказа</h3>
+        <a class="close-btn" id="close-check-status-btn">
+          <img src="./src/icons/close.svg">
+        </a>
+      </div>
+      <p>Введите номер заказа</p>
+      <input type="text" placeholder="364H7DT374">
+      <p>Введите номер телефона</p>
+      <input type="tel" placeholder="+7(999)000-00-00">
+      <a href="#" class="button-text-outline">Узнать статус заказа</a>
+    </div>
+  </div>
+  <script src="./src/js/checkStatus.js"></script>
+
+  <div id="search-panel">
+    <div class="search-content">
+      <div class="search-input">
+        <input type="text" placeholder="Поиск"/>
+        <a href="#" class="search-icon">
+          <img src="./src/icons/search.svg" width="29px" height="29px">
+        </a>
+      </div>
+      <div class="search-suggestions">
+        <span>Часто ищут:</span>
+        <a href="#">
+          <img src="./src/icons/search.svg" width="21px" height="21px"> Akko Monsgeek</a>
+        <a href="#">
+          <img src="./src/icons/search.svg" width="21px" height="21px"> Мышь AG One 8K White</a>
+      </div>
+    </div>
+  </div>
+  <script src="./src/js/search.js"></script>
+
+    <main>
+        <section class="not-found-section">
+          <article class="not-found-404">
+            <h1>4</h1>
+            <img src="./src/img/404.png" alt="0">
+            <h1>4</h1>
+          </article>
+          <article class="not-found-btn">
+            <a href="./index.html" class="button-text">Вернуться на главную</a>
+          </article>
+        </section>
+    </main>
+
+    <footer>
+      <!-- first part footer -->
+      <div class="footer-first-part">
+        <div class="logo-footer">
+          <img src="./src/icons/GrayTechLinkLogo.svg" alt="Logo" width="189px" height="34px">
+        </div>
+        <nav>
+          <ul class="footer-socials">
+            <li><a href="https://vk.com/techlink" target="_blank">
+                <img src="./src/icons/vk.svg" width="40px" height="40px">
+              </a>
+            </li>
+            <li><a href="https://youtube.com/techlink" target="_blank">
+                <img src="./src/icons/yt.svg" width="40px" height="40px">
+              </a>
+            </li>
+            <li><a href="https://t.me/techlink" target="_blank">
+                <img src="./src/icons/tg.svg" width="40px" height="40px">
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- main part footer -->
+      <div class="footer-main-part">
+        <article class="footer-column">
+          <h3>Покупателям</h3>
+        <ul>
+          <li><a href="#">Политика конфиденциальности</a></li>
+          <li><a href="#">Пользовательское соглашение</a></li>
+          <li><a href="#">Договор оферты</a></li>
+        </ul>
+      </article>
+      <article class="footer-column">
+        <h3>Покупателям</h3>
+        <ul>
+          <li><a href="./delivery.html">Доставка и оплата</a></li>
+          <li><a href="#">Поддержка</a></li>
+        </ul>
+      </article>
+      <article class="footer-column">
+        <h3>Главная</h3>
+        <ul>
+          <li><a href="./sales.html">Хиты</a></li>
+          <li><a href="#">Преимущества</a></li>
+          <li><a href="./new_items.html">Новинки</a></li>
+        </ul>
+      </article>
+      <article class="footer-column">
+        <h3>Контакты</h3>
+          <ul>
+            <li><a href="tel:+79990000000">+7(999)000-00-00</a></li>
+            <li><a href="mailto:techlink@6ek.ru">techlink@6ek.ru</a></li>
+          </ul>
+        </article>
+      </div>
+      <p class="footer-information">ООО «ТечЛинк», ОГРН: 1234567890, Юр. адрес: 123456, Здешняя обл, г Тут, д 3 © 2025 TECHLINK</p>
+    </footer>
+</body>
+</html>
