@@ -19,3 +19,9 @@ const closeModal = () => {
 
 closeBtn.addEventListener('click', closeModal);
 overlay.addEventListener('click', closeModal);
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && panel.classList.contains('open')) {
+        closeModal();
+    }
+});

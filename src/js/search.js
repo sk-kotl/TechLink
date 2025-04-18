@@ -13,3 +13,9 @@ const closeSearchModal = () => {
 }
 
 overlay.addEventListener('click', closeSearchModal);
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && searchPanel.classList.contains('open')) {
+        closeSearchModal();
+    }
+});
