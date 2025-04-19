@@ -10,7 +10,9 @@ dropBtn.addEventListener('click', () => {
 
 document.addEventListener('click', (e) => {
     if (!dropBtn.contains(e.target) && !dropMenu.contains(e.target)) {
-       
+        dropMenu.classList.add('hidden');
+        dropMenu.classList.remove('visible');
+        dropBtn.classList.remove('active');
     }
 });
 
