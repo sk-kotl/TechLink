@@ -506,6 +506,7 @@ header {
 }
 
 .item p {
+  color: #333333;
   font-size: 24px;
   margin: 0;
   text-align: left;
