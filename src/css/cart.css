@@ -22,6 +22,7 @@
     object-fit:contain;
     background-color: white;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 .item-details {
@@ -35,6 +36,7 @@
 .item-text {
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .purple-text {
