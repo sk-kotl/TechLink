@@ -289,7 +289,7 @@ header {
     top: 30px;
     right: 60px;
     color: #333333;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 700;
     margin: 0;
   }
@@ -405,11 +405,10 @@ header {
       grid-column: 1 / -1;
       grid-row: auto;
       min-height: 300px;
-      max-height: 480px;
+      max-height: 300px;
     }
   
     .category h2 {
-      font-size: 24px;
       top: 20px;
       right: 40px;
     }
@@ -530,7 +529,7 @@ header {
     }
   
     .item {
-      padding: 20px;
+      padding: 30px;
     }
   
     .item h3 {
@@ -559,7 +558,7 @@ header {
     }
   
     .item {
-      padding: 15px;
+      padding: 30px;
     }
   
     .item img {
