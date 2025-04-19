@@ -1,0 +1,150 @@
+.item-card {
+    display: flex;
+    padding: 0 60px 200px;
+    color: #333333;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.left-side-photos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+.left-side-photos img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.left-side-photos img:hover,
+.left-side-photos img.active {
+    opacity: 1;
+}
+
+.main-photo-container {
+    flex: 1;
+    background-color: #F5F3ED;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-right: 120px;
+    cursor: pointer;
+}
+
+.main-photo {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.item-card-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.breadcrumbs {
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.breadcrumbs a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    color: #9652C7
+}
+
+.item-name {
+    color: #9652C7;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.item-id {
+    font-size: 14px;
+    margin-bottom: 64px;
+}
+
+.item-cost {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.old-price {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: #999;
+}
+
+.item-warn {
+    color: #DA4F5D;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.item-card-info .button-text {
+    background-color: #9652C7;
+    color: #FFFFFF;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.25s;
+    padding: 15px 30px;
+    margin-bottom: 50px;
+}
+
+.item-card-info .button-text:hover {
+    background-color: #333333;
+  }
+
+.item-delivery {
+    display: flex;
+    gap: 20px;
+    margin: 0 auto
+}
+
+.delivery-part {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.delivery-part:first-of-type {
+    margin-right: 12%;
+    padding-right: 12.5%;
+    border-right: 1px solid #333333;
+}
+
+.delivery-part img {
+    width: 48px;
+    height: 48px;
+}
+
+.delivery-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
