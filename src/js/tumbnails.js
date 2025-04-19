@@ -15,6 +15,7 @@ if (thumbnails.length > 0) {
 }
 
 mainPhotoContainer.addEventListener('click', () => {
+    document.body.style.overflow = 'hidden';
     const fullscreen = document.createElement('div');
     fullscreen.style.position = 'fixed';
     fullscreen.style.top = '0';
@@ -52,6 +53,7 @@ mainPhotoContainer.addEventListener('click', () => {
 
     const keyHandler = (e) => {
         if (e.key === 'Escape') {
+            document.body.style.overflow = 'auto';
             document.body.removeChild(fullscreen);
             document.removeEventListener('keydown', keyHandler);
         } else if (e.key === 'ArrowRight') {
@@ -64,6 +66,7 @@ mainPhotoContainer.addEventListener('click', () => {
     document.addEventListener('keydown', keyHandler);
 
     fullscreen.addEventListener('click', () => {
+        document.body.style.overflow = 'auto';
         document.body.removeChild(fullscreen);
         document.removeEventListener('keydown', keyHandler);
     });
