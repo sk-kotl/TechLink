@@ -19,7 +19,8 @@
     max-height: 324px;
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit:contain;
+    background-color: white;
     border-radius: 50px;
 }
 
