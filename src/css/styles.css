@@ -494,6 +494,7 @@ header {
   object-fit: contain;
   border-radius: 50px;
   margin: 0 auto;
+  background-color: white;
 }
 
 .item h3 {
