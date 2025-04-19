@@ -1,9 +1,9 @@
 .item-card {
     display: flex;
-    padding: 0 60px 200px;
+    padding: 0 60px;
     color: #333333;
     max-width: 1920px;
-    margin: 0 auto;
+    margin: 0 auto 200px;
 }
 
 .left-side-photos {
@@ -30,7 +30,7 @@
 
 .main-photo-container {
     flex: 1;
-    background-color: #F5F3ED;
+    background-color: #EFE9D9;
     border-radius: 16px;
     display: flex;
     justify-content: center;
@@ -150,6 +150,119 @@
 }
 
 
+
+.item-description {
+    background-color: #EFE9D9;
+    border-radius: 50px;
+    margin: 0 60px 200px;
+    padding: 50px 330px;
+    display: grid;
+    gap: 30px;
+}
+
+#specifications {
+    display: grid;
+    gap: 20px;
+    font-size: 24px;
+}
+
+.item-description h2 {
+    color: #9652C7;
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+#reviews {
+    display: grid;
+    gap: 20px;
+}
+
+.awards {
+    display: flex;
+    font-size: 24px;
+    align-items: center;
+}
+
+.awards span {
+    margin-left: 10px;
+}
+
+.review {
+    background-color: white;
+    border-radius: 50px;
+    padding: 20px 50px;
+    display: grid;
+    gap: 20px;
+}
+
+.review-header {
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review-header-right {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.author-awards {
+    display: flex;
+    align-items: center;
+}
+
+.author-awards span {
+    margin-left: 10px;
+}
+
+.author-review {
+    color:#9652C7
+}
+
+.description-options {
+    position: sticky;
+    top: 20px;
+    background-color: white;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.description-options ul {
+    position: relative;
+    font-size: 24px;
+    justify-content: center;
+    display: flex;
+    list-style: none;
+}
+
+.description-options li {
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #EFE9D9;
+    margin-right: 5px;
+    transition: 0.25s;
+}
+
+.description-options .active {
+    background-color: #9652C7;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.description-options .active a {
+    color: white;
+}
+
+.description-options a {
+    color: #333333;
+}
+
+
+
+
 @media (max-width: 1200px) {
     .item-card {
         flex-direction: column;
@@ -189,6 +302,38 @@
     .item-delivery {
         justify-content: center;
     }
+
+
+
+    .item-description {
+        margin: 0 30px 80px;
+        padding: 40px 60px;
+    }
+
+    .item-description h2 {
+        font-size: 28px;
+    }
+
+    #specifications,
+    .awards,
+    .review-header,
+    .review,
+    #description {
+        font-size: 20px;
+    }
+
+    .review {
+        padding: 15px 30px;
+    }
+
+    .description-options ul {
+        font-size: 20px;
+    }
+
+    .description-options li {
+        padding: 8px 15px;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -262,11 +407,65 @@
     .delivery-part {
         font-size: 12px;
     }
+
+
+
+    .item-description {
+        margin: 0 20px 60px;
+        padding: 30px 20px;
+    }
+
+    .item-description h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    #specifications,
+    .awards,
+    .review-header,
+    .review,
+    #description {
+        font-size: 18px;
+    }
+
+    .review {
+        padding: 10px 20px;
+        border-radius: 25px;
+    }
+
+    .review-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .review-header-right {
+        font-size: 16px;
+    }
+
+    .description-options {
+        position: sticky;
+        top: 20px;
+    }
+
+    .description-options ul {
+        flex-direction: row;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .description-options li {
+        width: 100%;
+        text-align: center;
+        margin: 0 5px;
+        padding: 10px;
+        border-radius: 25px;
+    }
 }
 
 @media (max-width: 480px) {
     .item-card {
-        padding: 0 10px 60px;
+        margin: 0 10px 40px;
     }
 
     .left-side-photos img {
@@ -324,4 +523,49 @@
     .delivery-part {
         font-size: 10px;
     }
+
+
+
+    .item-description {
+        margin: 0 10px 40px;
+        padding: 20px 15px;
+        border-radius: 25px;
+    }
+
+    .item-description h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    #specifications,
+    #description,
+    .awards,
+    .review-header,
+    .review-text {
+        font-size: 16px;
+    }
+
+    .review {
+        padding: 10px 15px;
+        border-radius: 20px;
+    }
+
+    .review-header-right {
+        font-size: 14px;
+    }
+
+    .description-options ul {
+        font-size: 16px;
+    }
+
+    .description-options li {
+        padding: 8px;
+    }
+
+    .awards img,
+    .author-awards img {
+        width: 20px;
+        height: 20px;
+    }
 }
+

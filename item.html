@@ -111,45 +111,122 @@
   </div>
   <script src="./src/js/search.js"></script>
 
-  <main class="item-card">
-    <div class="left-side-photos">
-        <img class="thumbnail" src="./src/img/item.png" data-large="./src/img/item.png">
-        <img class="thumbnail" src="./src/img/item1.png" data-large="./src/img/item.png">
-        <img class="thumbnail" src="./src/img/item2.png" data-large="./src/img/item.png">
-        <img class="thumbnail" src="./src/img/item-artisan.png" data-large="./src/img/item.png">
-        <img class="thumbnail" src="./src/img/item-keycaps.png" data-large="./src/img/item.png">
-        <img class="thumbnail" src="./src/img/item-switch.png" data-large="./src/img/item.png">
+  <main>
+    <div class="item-card">
+      <div class="left-side-photos">
+          <img class="thumbnail" src="./src/img/item.png" data-large="./src/img/item.png">
+          <img class="thumbnail" src="./src/img/item1.png" data-large="./src/img/item.png">
+          <img class="thumbnail" src="./src/img/item2.png" data-large="./src/img/item.png">
+          <img class="thumbnail" src="./src/img/item-artisan.png" data-large="./src/img/item.png">
+          <img class="thumbnail" src="./src/img/item-keycaps.png" data-large="./src/img/item.png">
+          <img class="thumbnail" src="./src/img/item-switch.png" data-large="./src/img/item.png">
+      </div>
+      <div class="main-photo-container">
+          <img class="main-photo" src="./src/img/item.png" alt="Main product image">
+      </div>
+      <div class="item-card-info">
+          <span class="breadcrumbs"><a href="./">Главная</a> / <a href="./catalog.html">Каталог</a> / <a href="./catalog.html">Мыши</a></span>
+          <h1 class="item-name">Razer Viper V3</h1>
+          <span class="item-id">ID: 0103810-11</span>
+          <div class="item-cost">
+              12 000 ₽ <span class="old-price">16 000₽</span>
+          </div>
+          <span class="item-warn">Осталась 1 штука, успейте заказать</span>
+          <a class="button-text" href="./cart_items.html">В корзину</a>
+          <div class="item-delivery">
+              <div class="delivery-part">
+                  <img src="./src/icons/icon-delivery.svg" alt="Delivery icon">
+                  <div class="delivery-text">
+                      <span class="purple-text">Доставка от 2 часов</span>
+                      <span>от 590₽</span>
+                  </div>
+              </div>
+              <div class="delivery-part">
+                  <img src="./src/icons/icon-home.svg" alt="Pickup icon">
+                  <div class="delivery-text">
+                      <span class="purple-text">Самовывоз день в день</span>
+                      <span>Бесплатно</span>
+                  </div>
+              </div>
+          </div>  
+      </div>
+      <script src="./src/js/tumbnails.js"></script>
     </div>
-    <div class="main-photo-container">
-        <img class="main-photo" src="./src/img/item.png" alt="Main product image">
-    </div>
-    <div class="item-card-info">
-        <span class="breadcrumbs"><a href="./">Главная</a> / <a href="./catalog.html">Каталог</a> / <a href="./catalog.html">Мыши</a></span>
-        <h1 class="item-name">Razer Viper V3</h1>
-        <span class="item-id">ID: 0103810-11</span>
-        <div class="item-cost">
-            12 000 ₽ <span class="old-price">16 000₽</span>
+    <div class="item-description">
+      <nav class="description-options">
+        <ul>
+          <li class="active"><a href="#description">Описание</a></li>
+          <li><a href="#specifications">Характеристики</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+        </ul>
+      </nav>
+
+      <div id="description">
+        Беспроводная мышь Razer Viper V3 HyperSpeed имеет симметричную форму, оптимизированную для когтевого хвата или хвата кончиками пальцев. Она имеет выступ для безымянного пальца для предотвращения защемления, более плоские боковые стенки для разных стилей хвата и размеров рук и выраженные углубления для пальцев для лучшего захвата. Модель оснащена набором интеллектуальных функций для усовершенствованной настройки и управления для повышенной точности.
+Благодаря технологии беспроводного подключения Razer HyperSpeed Wireless мышь может работать до 280 часов всего от одной батареи AA.
+      </div>
+      <div id="specifications">
+        <h2>Технические характеристики</h2>
+        <p>Цвет: Чёрный</p>
+        <p>Сенсор: Оптический сенсор Razer Focus Pro 30K DPI</p>
+        <p>Подключение: Беспроводное (Razer HyperSpeed Wireless) и зарядка через USB</p>
+        <p>Количество кнопок: 6 кнопок</p>
+        <p>Эргономичный дизайн: Для правой руки</p>
+        <p>Автономность: До 280 часов работы с одной батареей AA (в режиме Bluetooth)</p>
+        <p>Вес: 82 г (без батареи)</p>
+        <p>Razer Viper V3 HyperSpeed обеспечивает комфорт и высокую производительность в играх.</p>
+      </div>
+      <div id="reviews">
+        <h2>Отзывы:</h2>
+        <div class="awards">
+          <img src="./src/icons/stars-rounded.svg" alt="1 звезда">
+          <img src="./src/icons/stars-rounded.svg" alt="2 звезды">
+          <img src="./src/icons/stars-rounded.svg" alt="3 звезды">
+          <img src="./src/icons/stars-rounded.svg" alt="4 звезды">
+          <img src="./src/icons/stars-outline.svg" alt="5 звезд (не получена)">
+          <span>2 отзыва</span>
         </div>
-        <span class="item-warn">Осталась 1 штука, успейте заказать</span>
-        <a class="button-text" href="./cart_items.html">В корзину</a>
-        <div class="item-delivery">
-            <div class="delivery-part">
-                <img src="./src/icons/icon-delivery.svg" alt="Delivery icon">
-                <div class="delivery-text">
-                    <span class="purple-text">Доставка от 2 часов</span>
-                    <span>от 590₽</span>
-                </div>
+        <div class="review">
+          <div class="review-header">
+            <span class="author-review">Иван Иванов</span>
+            <div class="review-header-right">
+              <div class="author-awards">
+                <img src="./src/icons/stars-rounded.svg" alt="1 звезда">
+                <img src="./src/icons/stars-rounded.svg" alt="2 звезды">
+                <img src="./src/icons/stars-rounded.svg" alt="3 звезды">
+                <img src="./src/icons/stars-rounded.svg" alt="4 звезды">
+                <img src="./src/icons/stars-outline.svg" alt="5 звезд (не получена)">
+                <span>19.04.2025</span>
+              </div>
             </div>
-            <div class="delivery-part">
-                <img src="./src/icons/icon-home.svg" alt="Pickup icon">
-                <div class="delivery-text">
-                    <span class="purple-text">Самовывоз день в день</span>
-                    <span>Бесплатно</span>
-                </div>
+          </div>
+          <div class="review-text">
+            Для игр Razer Viper V3 HyperSpeed – лёгкая и точная беспроводная игровая мышь с длительным временем работы.
+          </div>
+        </div>
+        <div class="review">
+          <div class="review-header">
+            <span class="author-review">Иван Иванов</span>
+            <div class="review-header-right">
+              <div class="author-awards">
+                <img src="./src/icons/stars-rounded.svg" alt="1 звезда">
+                <img src="./src/icons/stars-rounded.svg" alt="2 звезды">
+                <img src="./src/icons/stars-rounded.svg" alt="3 звезды">
+                <img src="./src/icons/stars-rounded.svg" alt="4 звезды">
+                <img src="./src/icons/stars-outline.svg" alt="5 звезд (не получена)">
+                <span>15.04.2025</span>
+              </div>
             </div>
-        </div>  
+          </div>
+          <div class="review-text">
+            Пластик приятный на ощупь, на корпусе следов от пота не видно. Пока всё работает четенько. В комплекте обычная батарейка, высаживается не сильно, в будущем поменяю на аккум.
+<br>
+Ах да, напрочь глушит WiFi 2.4GHz, так что имейте ввиду. При этом на той же частоте Bluetooth не глушится.
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="./src/js/tumbnails.js"></script>
+    <script src="./src/js/navOptionsItemCard.js"></script>
 </main>
 
   <footer>
