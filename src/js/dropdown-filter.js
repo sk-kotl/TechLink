@@ -10,6 +10,12 @@ dropBtn.addEventListener('click', () => {
 
 document.addEventListener('click', (e) => {
     if (!dropBtn.contains(e.target) && !dropMenu.contains(e.target)) {
+       
+    }
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
         dropMenu.classList.add('hidden');
         dropMenu.classList.remove('visible');
         dropBtn.classList.remove('active');
