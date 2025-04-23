@@ -149,6 +149,53 @@
     gap: 2px;
 }
 
+.fullscreen-viewer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.fullscreen-viewer.active {
+    display: flex;
+}
+
+.fullscreen-image {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.nav-arrow {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    padding: 10px 10px 0px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+
+.nav-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.arrow-left {
+    left: 20px;
+    transform: rotate(-90deg);
+}
+
+.arrow-right {
+    right: 20px;
+    transform: rotate(90deg);
+}
+
 
 
 .item-description {

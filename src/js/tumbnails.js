@@ -1,73 +1,79 @@
 const thumbnails = document.querySelectorAll('.thumbnail');
-const mainPhoto = document.querySelector('.main-photo');
-const mainPhotoContainer = document.querySelector('.main-photo-container');
+        const mainPhoto = document.querySelector('.main-photo');
+        const mainPhotoContainer = document.querySelector('.main-photo-container');
+        const fullscreenViewer = document.querySelector('.fullscreen-viewer');
+        const fullscreenImage = document.querySelector('.fullscreen-image');
+        const leftArrow = document.querySelector('.arrow-left');
+        const rightArrow = document.querySelector('.arrow-right');
 
-thumbnails.forEach(thumbnail => {
-    thumbnail.addEventListener('click', () => {
-        thumbnails.forEach(thumb => thumb.classList.remove('active'));
-        thumbnail.classList.add('active');
-        mainPhoto.src = thumbnail.src;
-    });
-});
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', () => {
+                thumbnails.forEach(thumb => thumb.classList.remove('active'));
+                thumbnail.classList.add('active');
+                mainPhoto.src = thumbnail.src;
+            });
+        });
 
-if (thumbnails.length > 0) {
-    thumbnails[0].classList.add('active');
-}
-
-mainPhotoContainer.addEventListener('click', () => {
-    document.body.style.overflow = 'hidden';
-    const fullscreen = document.createElement('div');
-    fullscreen.style.position = 'fixed';
-    fullscreen.style.top = '0';
-    fullscreen.style.left = '0';
-    fullscreen.style.width = '100vw';
-    fullscreen.style.height = '100vh';
-    fullscreen.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
-    fullscreen.style.display = 'flex';
-    fullscreen.style.justifyContent = 'center';
-    fullscreen.style.alignItems = 'center';
-    fullscreen.style.zIndex = '1000';
-
-    const largeImg = document.createElement('img');
-    largeImg.src = mainPhoto.src;
-    largeImg.style.maxWidth = '90%';
-    largeImg.style.maxHeight = '90%';
-    largeImg.style.objectFit = 'contain';
-
-    fullscreen.appendChild(largeImg);
-    document.body.appendChild(fullscreen);
-    
-    let currentIndex = Array.from(thumbnails).findIndex(thumb => thumb.src === mainPhoto.src);
-
-    const navigateImages = (direction) => {
-        if (direction === 'next') {
-            currentIndex = (currentIndex + 1) % thumbnails.length;
-        } else if (direction === 'prev') {
-            currentIndex = (currentIndex - 1 + thumbnails.length) % thumbnails.length;
+        if (thumbnails.length > 0) {
+            thumbnails[0].classList.add('active');
         }
-        largeImg.src = thumbnails[currentIndex].src;
-        mainPhoto.src = thumbnails[currentIndex].src;
-        thumbnails.forEach(thumb => thumb.classList.remove('active'));
-        thumbnails[currentIndex].classList.add('active');
-    };
 
-    const keyHandler = (e) => {
-        if (e.key === 'Escape') {
-            document.body.style.overflow = 'auto';
-            document.body.removeChild(fullscreen);
-            document.removeEventListener('keydown', keyHandler);
-        } else if (e.key === 'ArrowRight') {
-            navigateImages('next');
-        } else if (e.key === 'ArrowLeft') {
-            navigateImages('prev');
-        }
-    };
+        mainPhotoContainer.addEventListener('click', () => {
+            document.body.style.overflow = 'hidden';
+            fullscreenViewer.classList.add = 'active';
+            fullscreenViewer.classList.toggle('active');
+            fullscreenImage.src = mainPhoto.src;
 
-    document.addEventListener('keydown', keyHandler);
+            let currentIndex = Array.from(thumbnails).findIndex(thumb => thumb.src === mainPhoto.src);
 
-    fullscreen.addEventListener('click', () => {
-        document.body.style.overflow = 'auto';
-        document.body.removeChild(fullscreen);
-        document.removeEventListener('keydown', keyHandler);
-    });
-});
+            const navigateImages = (direction) => {
+                if (direction === 'next') {
+                    currentIndex = (currentIndex + 1) % thumbnails.length;
+                } else if (direction === 'prev') {
+                    currentIndex = (currentIndex - 1 + thumbnails.length) % thumbnails.length;
+                }
+                fullscreenImage.src = thumbnails[currentIndex].src;
+                mainPhoto.src = thumbnails[currentIndex].src;
+                thumbnails.forEach(thumb => thumb.classList.remove('active'));
+                thumbnails[currentIndex].classList.add('active');
+            };
+
+            leftArrow.addEventListener('click', (e) => {
+                e.stopPropagation();
+                navigateImages('prev');
+            });
+
+            rightArrow.addEventListener('click', (e) => {
+                e.stopPropagation();
+                navigateImages('next');
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    document.body.style.overflow = 'auto';
+                    fullscreenViewer.classList.remove('active');
+                    document.removeEventListener('keydown', 'ArrowRight');
+                    document.removeEventListener('keydown', 'ArrowLeft');
+                } else if (e.key === 'ArrowRight') {
+                    navigateImages('next');
+                } else if (e.key === 'ArrowLeft') {
+                    navigateImages('prev');
+                }
+            });
+
+            fullscreenViewer.addEventListener('click', (e) => {
+                if (e.target === fullscreenViewer) {
+                    document.body.style.overflow = 'auto';
+                    fullscreenViewer.classList.remove('active');
+                    document.removeEventListener('keydown', (e));
+                }
+            });
+
+            fullscreenViewer.addEventListener('transitionend', () => {
+                if (fullscreenViewer.style.display === 'flex') {
+                    document.addEventListener('keydown');
+                }
+            });
+        });
+
+        
