@@ -73,6 +73,10 @@
     color:#a067d3;
   }
 
+  .search-suggestions a:active {
+    color: #a067d3;
+  }
+
 @media (max-width: 768px) {
   #search-panel {
     padding: 40px 20px;
