@@ -50,6 +50,8 @@
   .search-suggestions {
     margin-top: 18px;
     font-size: 24px;
+    align-items: center;
+    justify-content: center;
   }
   
   .search-suggestions span {
@@ -64,8 +66,35 @@
     gap: 4px;
     transition: 0.25s;
     margin-right:10px;
+    font-size: 20px;
   }
 
   .search-suggestions a:hover {
     color:#a067d3;
   }
+
+@media (max-width: 768px) {
+  #search-panel {
+    padding: 40px 20px;
+  }
+
+  .search-input input {
+    font-size: 18px;
+    padding: 10px 0 10px 10px;
+  }
+
+  .search-suggestions {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search-suggestions img {
+    width: 12px;
+    height: 12px;
+  }
+
+  .search-suggestions a {
+    font-size: 18px;
+  }
+}
